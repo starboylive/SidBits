@@ -21,6 +21,6 @@
     "title": "-- Portfolio",
     "description": "A minimal, terminal-inspired portfolio showcasing my projects, skills, and tools. Designed for focus, clarity, and a clean developer-first experience.",
     "tech": ["HTML", "CSS", "JavaScript", "JSON"], 
-    "url": "#index.html"
+    "url": "https://sidbits.vercel.app/"
   }
 ]
