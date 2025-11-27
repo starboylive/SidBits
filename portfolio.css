@@ -1,0 +1,107 @@
+* {
+ 	box-sizing: border-box;
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ body {
+ 	background-color: rgb(255, 254, 249);
+ 	color: aliceblue;
+ 	font-family: 'Courier New', Courier, monospace monospace;
+ }
+
+ .main{
+  margin-bottom: 2rem;
+ }
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: auto;
+  margin-top: 2rem;
+  transition: 0.2s ease all;  
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+
+.portfolio-card {
+  background: rgb(24, 105, 255);
+  color: white;
+  border-radius: 1rem;
+  /* padding: 1.5rem; */
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  font-family:  'Courier New', monospace, monospace;
+  position: relative;
+  transition: 0.2s ease all;
+}
+
+.portfolio-card::before {
+  content: "";
+  height: 0.6rem;
+  background: transparent;
+  border-radius: 0.75rem 0.75rem 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.portfolio-card:hover {
+  cursor:pointer;
+  transform: scale(1.02, 1.03);
+}
+
+
+.portfolio-title {
+  font-size: 1.055rem;
+  margin-bottom: 0.8rem;
+  /* color: #0f0f0f; */
+  color: #551A8B;
+  font-weight: 550;
+  background-color:rgb(255, 255, 255);
+  border-radius: 0.3rem;
+  margin-top: -1rem;
+  margin-left: -4rem;
+  margin-right: -4rem;
+  padding-left: 3.5rem;
+}
+
+.portfolio-desc {
+  font-size: 1.075rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 1rem;
+  background-color: rgb(24, 105, 255);
+}
+
+.tech-stack {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  background-color: rgb(24, 105, 255);
+}
+
+.tech {
+  background: rgb(0, 4, 218);
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.4rem;
+  font-size: 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gap1{
+    height: 4rem;
+}
+
+#endtitle{
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10rem;
+   
+}

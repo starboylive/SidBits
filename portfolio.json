@@ -1,0 +1,26 @@
+[
+  {
+    "title": "-- Sidframe - Blog website",
+    "description": "Sidframe is my personal blog where I share insights on technology, creativity, and self-growth, wrapped in a minimal design and smooth, distraction-free reading experience.",
+    "tech": ["HTML", "CSS", "JavaScript"], 
+    "url": "https://sidframe.vercel.app/"
+  },
+  {
+    "title": "-- Sidiot Media - Graphic n' Motion Design Portfolio",
+    "description": "Sidiotic Media is my visual portfolio showcasing my work in graphic design, motion graphics, and video editing, focused on bold visuals, storytelling, and impactful creative direction.",
+    "tech": ["HTML", "CSS"], 
+    "url": "https://sidiotmedia.vercel.app/"
+  },
+  {
+    "title": "-- Hackathon-Sushacks (First-Hackathon!)",
+    "description": "We created a website during 24-hour hackathon to spread awareness on sustainability and GreenTech. Our project features interactive elements and educational content to engage users in eco-friendly practices.",
+    "tech": ["HTML", "CSS", "JavaScript"], 
+    "url": "https://greenterk.vercel.app/"
+  },
+  {
+    "title": "-- Portfolio",
+    "description": "A minimal, terminal-inspired portfolio showcasing my projects, skills, and tools. Designed for focus, clarity, and a clean developer-first experience.",
+    "tech": ["HTML", "CSS", "JavaScript", "JSON"], 
+    "url": "#index.html"
+  }
+]
