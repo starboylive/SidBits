@@ -29,7 +29,7 @@
 }  
 
 .gap{
-    height: 4vh;
+    height: 2vh;
     /* background-color: cyan;ś */
 }
 
@@ -85,7 +85,11 @@
      margin-top: 2rem;
 }
 
-
+#webdec{
+    /* font-weight: bold; */
+    font-size: 1.1rem;
+    color: blue;
+}
 
 #zuck{
     height: 16vh;
@@ -104,6 +108,7 @@
     background-color: transparent;
     border: 0;
     color: blue;
+
     
 }
 #home2:hover{

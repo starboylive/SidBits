@@ -1,5 +1,11 @@
 [
   {
+    "title": "-- Medisphere - Hackathon Project (Top 10 Finalist!)",
+    "description": "A streamlined healthcare platform connecting organ donors, recipients, and medical professionals. Built to modernize the organ donation process with smart tech, faster communication, and a compassionate, life-saving focus.",
+    "tech": ["HTML", "CSS", "JavaScript"], 
+    "url": "https://medisphere-v1.vercel.app"
+  },
+  {
     "title": "-- Sidframe - Blog website",
     "description": "Sidframe is my personal blog where I share insights on technology, creativity, and self-growth, wrapped in a minimal design and smooth, distraction-free reading experience.",
     "tech": ["HTML", "CSS", "JavaScript"], 
@@ -12,7 +18,7 @@
     "url": "https://sidiotmedia.vercel.app/"
   },
   {
-    "title": "-- Hackathon-Sushacks (First-Hackathon!)",
+    "title": "-- Greentrek - Hackathon Project (First-Hackathon!)",
     "description": "We created a website during 24-hour hackathon to spread awareness on sustainability and GreenTech. Our project features interactive elements and educational content to engage users in eco-friendly practices.",
     "tech": ["HTML", "CSS", "JavaScript"], 
     "url": "https://greenterk.vercel.app/"
