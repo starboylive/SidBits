@@ -189,7 +189,7 @@
     color: green;
     float: right;
     margin-top: -0.050rem ;
-    margin-right: 0.5rem;
+    /* margin-right: 0.5rem; */
     transition: all 0.3s ease;
     background-color: yellowgreen;
     color: black;
