@@ -19,7 +19,7 @@
 .nav-bar{
     height: 3vh;
     width: 50vh;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:  monospace;
     /* background-color: aqua; */
     gap: 2.5rem;
     display: flex;
@@ -34,7 +34,7 @@
 }
 
 #home-spec{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
     background-color: blue;
     border: 0;
     padding: 0.5rem;
@@ -49,12 +49,13 @@
 }
 
 #home{
-    font-family: 'Courier New', Courier, monospace;
+    font-family:  monospace;
     background-color: transparent;
     color: rgb(0, 0, 0);
     border: 0;
     padding: 0.5rem;
     font-size: 1rem;
+    font-weight: 600;
 }
 #home:hover{
     background-color: blue;
@@ -103,10 +104,10 @@
 #intro{
     font-size: 1rem;
     color: black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:  monospace;
 }
 #home2{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
     font-size: 1.1rem;
     background-color: transparent;
     border: 0;
@@ -120,7 +121,7 @@
     cursor: pointer;
 }
 #home3{
-    font-family: 'Courier New', Courier, monospace;
+    font-family:  monospace;
     font-size: 1.1rem;
     background-color: transparent;
     border: 0;
@@ -134,7 +135,7 @@
 }
 
 #home4{
-    font-family: 'Courier New', Courier, monospace;
+    font-family:  monospace;
     background-color: transparent;
     border: 0;
     padding: 0.5rem;
@@ -147,7 +148,7 @@
     cursor: pointer;
 }
 #home5{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
     background-color: transparent;
     border: 0;
     padding: 0.5rem;
@@ -165,7 +166,7 @@
 }
 
 #home6{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
     background-color: transparent;
     color: black;
     border: 0;
@@ -184,7 +185,7 @@
 }
 
 #resume{
-    font-family: 'Courier New', Courier, monospace;
+    font-family:  monospace;
     background-color: transparent;
     border: 0;
     padding: 0.4rem;
@@ -265,3 +266,75 @@
     }
   }
   
+  .linkstation {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: 0;
+    color: rgb(76, 0, 255);
+    text-decoration: none;
+    letter-spacing: -0.1rem;
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+  
+  }
+
+    .linkstation:hover {
+        background-color: rgb(76, 0, 255);
+        color: aliceblue;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        .linkstation {
+            font-size: 1rem;
+            margin-left: -0.5rem;
+
+        }
+    }
+
+    #gitA{
+    font-family:  monospace;
+    background-color: transparent;
+    border: 0;
+    padding: 0.5rem;
+    /* font-size: 1rem; */
+    color: black;
+    /* margin-top: 1rem; */
+    }
+
+    .github-heatmap {
+    width: 100%;
+    /* whatever fits your sidebar */
+    /* height: 45px;               zooms into last few months */
+    overflow: hidden;
+    /* hides old months */
+    border-radius: 6px;
+}
+
+.github-heatmap img {
+    width: 100%;
+    /* zoom in horizontally */
+    /* transform: translateX(-400px); */
+    /* move left to show latest months */
+}
+
+@media (max-width: 400) {
+    .github-heatmap {
+        width: 200px;
+        /* whatever fits your sidebar */
+        /* height: 45px;               zooms into last few months */
+        overflow: hidden;
+        /* hides old months */
+        border-radius: 6px;
+    }
+
+    .github-heatmap img {
+        width: 600px;
+        /* zoom in horizontally */
+        transform: translateX(-400px);
+        /* move left to show latest months */
+    }
+}
