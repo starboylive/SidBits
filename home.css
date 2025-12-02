@@ -266,7 +266,7 @@
     }
   }
   
-  .linkstation {
+  /* .linkstation {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.1rem;
     background-color: transparent;
@@ -285,7 +285,43 @@
         background-color: rgb(76, 0, 255);
         color: aliceblue;
         cursor: pointer;
-    }
+    } */
+
+    /* RGB Animation */
+@keyframes rgbCycle {
+  0%   { color: rgb(255, 0, 0); }      /* Red */
+  25%  { color: rgb(156, 156, 0); }    /* Yellow */
+  50%  { color: rgb(0, 255, 0); }      /* Green */
+  75%  { color: rgb(0, 170, 255); }    /* Blue */
+  100% { color: rgb(255, 0, 255); }    /* Magenta */
+}
+
+.linkstation {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+    letter-spacing: -0.1rem;
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+
+    /* NEW: RGB animation */
+    animation: rgbCycle 1s linear infinite;
+}
+
+/* Hover */
+.linkstation:hover {
+    background-color: rgb(76, 0, 255);
+    color: aliceblue !important;
+    cursor: pointer;
+    animation: none; /* stop anim on hover if you want solid color */
+    font-size: 1.2rem;
+}
+
 
     @media (max-width: 768px) {
         .linkstation {
