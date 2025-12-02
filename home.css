@@ -374,3 +374,51 @@
         /* move left to show latest months */
     }
 }
+
+.terminal-line {
+    margin-top: 12px;
+    font-family: inherit;
+    font-size: 0.98rem;
+    color: rgb(0, 0, 139);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 1.4em;
+}
+
+.terminal-line .typed {
+    color: rgb(0, 122, 75);
+    background: transparent;
+    padding: 2px 4px;
+    border-radius: 4px;
+    display: inline-block;
+    white-space: pre;
+    overflow: hidden
+}
+
+.cursor {
+    color: rgb(0, 122, 75);
+    font-weight: 800;
+    line-height: 1;
+    transform: translateY(-2px);
+    opacity: 0.95; 
+    /* margin-left: -1rem; */
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .cursor {
+        animation:none;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0
+    }
+}
+
+.cursor {
+    margin-top: 0.2rem;
+    animation: blink 0.5s steps(2, start) infinite
+}

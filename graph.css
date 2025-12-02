@@ -1,0 +1,54 @@
+
+/* ---------- GRAPH CONTAINER ---------- */
+
+.g-box {
+  /* border: 0.15rem solid #050505; */
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  height: 30vh;
+  width: 90%;
+  max-width: 50rem;
+  margin-left: -1rem;
+  float: left;
+  /* background: #e2e2e2; */
+  /* box-shadow: 0 0 0.6rem #00ff88; */
+}
+
+/* ---------- HEADER ---------- */
+
+.g-hd {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-family: monospace;
+  /* letter-spacing: -0.080rem; */
+  /* text-transform: uppercase; */
+  color: #000;
+  /* color: #00ff88; */
+  /* text-shadow: 0 0 0.5rem #141414; */
+}
+
+/* ---------- CANVAS AREA ---------- */
+
+#gCanv {
+  width: 90% !important;
+  height: 10rem !important;
+
+  /* TUI look — bordered canvas */
+  /* border: 0.1rem dashed #0e0e0e; */
+  padding: 0.5rem;
+  background: #ffffff;
+}
+
+/* ---------- SCROLLBAR (TUI style) ---------- */
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 0;
+}

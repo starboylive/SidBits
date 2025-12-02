@@ -66,6 +66,11 @@
 
         <div class="gap">
 
+            <div class="terminal-line" aria-live="polite">
+                <code class="typed" id="typed" aria-hidden="false"></code><span class="cursor"
+                    aria-hidden="true">█</span>
+            </div>
+
         </div>
         <div class="info-bar">
             <p id="home">~ about</p>
@@ -104,7 +109,7 @@
         <br>
         <div class="social-bar">
             <a href="https://github.com/starboylive" target="_blank"><button id="home5">Github</button></a>
-            <a href="https://x.com/sidbitss" target="_blank" ><button id="home5">Twitter</button></a>
+            <a href="https://x.com/sidbitss" target="_blank"><button id="home5">Twitter</button></a>
             <a href="https://www.linkedin.com/in/starboylive/" target="_blank"><button id="home5">Linkedin</button></a>
             <a href="https://www.instagram.com/sidiswater/" target="_blank"><button id="home5">Instagram</button></a>
             <a href="https://www.youtube.com/@sidiswired" target="_blank"><button id="home4">YouTube</button></a>
@@ -128,7 +133,52 @@
     </div>
 
 
+    <script>
+        (function () {
+            const el = document.getElementById('typed');
+            const cursor = document.querySelector('.cursor');
+            if (!el) return;
+            const phrases = [
+                '$ npm run start -- demo',
+                '$ git clone these/portfolio',
+                '$ open ./what-i-do.txt',
+                '$ open ./now-taking-client-projects.txt',
+            ];
+            const typingSpeed = 30;
+            const pause = 500;
 
+            // Prevent layout shift by reserving width for the longest phrase (in ch units)
+            const maxLen = phrases.reduce((m, s) => Math.max(m, s.length), 0);
+            el.style.minWidth = (maxLen + 1) + 'ch';
+
+            if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                el.textContent = phrases[0];
+                if (cursor) cursor.style.display = 'none';
+                return;
+            }
+
+            let p = 0, i = 0, deleting = false;
+            function tick() {
+                const full = phrases[p];
+                if (!deleting) {
+                    el.textContent = full.slice(0, ++i);
+                    if (i === full.length) {
+                        deleting = true;
+                        setTimeout(tick, pause);
+                        return;
+                    }
+                } else {
+                    el.textContent = full.slice(0, --i);
+                    if (i === 0) {
+                        deleting = false;
+                        p = (p + 1) % phrases.length;
+                    }
+                }
+                setTimeout(tick, deleting ? Math.max(20, typingSpeed / 2) : typingSpeed);
+            }
+            setTimeout(tick, 600);
+        })();
+    </script>
 
 
 
